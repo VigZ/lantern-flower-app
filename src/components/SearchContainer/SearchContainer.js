@@ -19,7 +19,7 @@ class SearchContainer extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    fetchBusinessInfo(this.state.searchTerm)
+    this.props.fetchBusinessInfo(this.state.searchTerm)
     this.setState({
       searchTerm: ""
     })

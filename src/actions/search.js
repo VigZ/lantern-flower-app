@@ -1,12 +1,12 @@
-import {SEARCH_TERM, BASE_URL, LIMIT_DEFAULT}from '../constants'
+import {SEARCH_TERM, BASE_URL, LIMIT_DEFAULT, API_KEY, PROXY_URL}from '../constants'
 
 export function fetchBusinessInfo(locationTerm) {
   return (dispatch) => {
-    var myInit = { method: 'GET',
-               headers: {'Authorization': `Bearer ${process.env.REACT_APP_API_KEY}`},
+    let init = { method: 'GET',
+               headers: {'Authorization': `Bearer ${API_KEY}`},
                mode: 'cors',
                cache: 'default' };
-    fetch(`${BASE_URL}?term=${SEARCH_TERM}&location=${locationTerm}&limit${LIMIT_DEFAULT}`, myInit)
+    fetch(`${PROXY_URL}${BASE_URL}?term=${SEARCH_TERM}&location=${locationTerm}&limit${LIMIT_DEFAULT}`, init)
     .then(response => response.json())
     .then(resultList =>{
        dispatch(setResultsList(resultList))
