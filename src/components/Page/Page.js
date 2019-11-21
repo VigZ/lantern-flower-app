@@ -10,7 +10,7 @@ class Page extends Component {
   render() {
     return (
       <div class="main">
-        <Header/>
+        <Header bannerText="Search for flowers near you."/>
       </div>
 
     );

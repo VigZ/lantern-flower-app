@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  .banner-text {
+    width: 50%;
+    justify-content: center;
+    font-size: 40px;
+  }
+}
