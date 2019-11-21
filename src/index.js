@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import ReactDOM from 'react-dom'
-import App from './App';
+import App from './components/App';
 import followingBarReducer from './reducers/followingBarReducer';
 import streamsReducer from './reducers/streamsReducer';
 
