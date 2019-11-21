@@ -6,7 +6,8 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import ReactDOM from 'react-dom'
 import App from './App';
 
-import './App.css';
+import './App.scss';
+import './fonts/Montserrat-Regular.ttf'
 
 import * as serviceWorker from './serviceWorker';
 
