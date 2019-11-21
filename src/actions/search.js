@@ -1,21 +1,23 @@
+import {SEARCH_TERM, BASE_URL, LIMIT_DEFAULT}from '../constants'
+
 export function fetchBusinessInfo(locationTerm) {
   return (dispatch) => {
     var myInit = { method: 'GET',
-               headers: {'Client-ID': 'wtdjztidcgme3rqcx8304felu3ino6'},
+               headers: {'Authorization': `Bearer ${process.env.REACT_APP_API_KEY}`},
                mode: 'cors',
                cache: 'default' };
-    fetch(`https://api.twitch.tv/helix/users?login=${searchTerm}`, myInit)
+    fetch(`${BASE_URL}?term=${SEARCH_TERM}&location=${locationTerm}&limit${LIMIT_DEFAULT}`, myInit)
     .then(response => response.json())
-    .then(streamData =>{
-       dispatch(addActiveStream(streamData))
+    .then(resultList =>{
+       dispatch(setResultsList(resultList))
      })
   }
 }
 
-export function addActiveStream(streamData){
+export function setResultsList(resultList){
   return {
-  type: "ADD_ACTIVE_STREAM",
-  payload: streamData
+  type: "SET_RESULT_LIST",
+  payload: resultList
   }
 }
 
@@ -23,14 +25,6 @@ export function setFocus(stream){
   return {
   type: "ADD_FOCUSED_STREAM",
   payload: stream
-}
-
-}
-
-export function deleteActiveStream(streamData){
-  return{
-    type: "DELETE_ACTIVE_STREAM",
-    payload: streamData
   }
 }
 

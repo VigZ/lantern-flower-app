@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.searchContainer {
+  display: flex;
+
+  form {
+    height: 50px;
+    input {
+      height: 100%;
+      max-width: 750px;
+      width: 50%;
+      outline:none;
+    }
+    button {
+      width: 50%;
+    }
+  }
+}
+
+.rounded {
+  border-radius: 5px;
+}

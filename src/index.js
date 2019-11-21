@@ -5,13 +5,14 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import ReactDOM from 'react-dom'
 import App from './App';
+import searchReducer from './reducers/searchReducer';
 
 import './App.scss';
 import './fonts/Montserrat-Regular.ttf'
 
 import * as serviceWorker from './serviceWorker';
 
-const rootReducer = combineReducers({})
+const rootReducer = combineReducers({searchReducer})
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
 
