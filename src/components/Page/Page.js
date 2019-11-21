@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Header from '../Header/Header.js'
+import SearchContainer from '../SearchContainer/SearchContainer.js'
 
 
 class Page extends Component {
@@ -9,8 +10,9 @@ class Page extends Component {
 
   render() {
     return (
-      <div class="main">
+      <div className="main">
         <Header bannerText="Search for flowers near you."/>
+        <SearchContainer/>
       </div>
 
     );
