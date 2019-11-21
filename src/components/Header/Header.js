@@ -24,10 +24,6 @@ const Header = (props) => {
 export default Header
 
 Header.propTypes = {
-  backgroundImage: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string,
   bannerText: PropTypes.string,
-}
-
-Header.defaultProps = {
-  backgroundImage: "https://media.istockphoto.com/photos/beautiful-pink-peony-flowers-on-white-table-with-copy-space-for-your-picture-id806870408?k=6&m=806870408&s=612x612&w=0&h=66tVRT5Rdsj5AbnggABG75HVO8qF40Ems1Mfdb1siFU="
 }

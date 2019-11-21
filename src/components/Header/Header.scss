@@ -1,7 +1,10 @@
+@import '../../variables.scss';
+
 .header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  background-color: $primaryColor;
 
   .banner-text {
     width: 50%;
