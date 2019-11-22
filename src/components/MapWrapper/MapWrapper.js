@@ -23,7 +23,7 @@ class MapWrapper extends Component {
         url: require("./flower-marker.png"),
         scaledSize: new this.props.google.maps.Size(30, 30),
         anchor: new this.props.google.maps.Point(30, 30),}}
-      onClick={() => console.log("You clicked me!")} />
+      onClick={() => window.open(location.url, '_blank')} />
   })
 }
 
