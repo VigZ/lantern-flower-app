@@ -49,8 +49,10 @@ class SearchContainer extends React.Component {
             </form>
             <button onClick={this.handleGeocode}>Use my location</button>
          </div>
-         <MapWrapper/>
-         <ResultsList resultsList={this.props.businessList}/>
+         <div className="sideBySide">
+           <MapWrapper locations={this.props.businessList}/>
+           <ResultsList resultsList={this.props.businessList}/>
+         </div>
        </div>
         )
       }
