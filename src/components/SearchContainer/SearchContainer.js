@@ -47,7 +47,7 @@ class SearchContainer extends React.Component {
             <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
               <input type="text" value={this.state.searchTerm} className="search rounded" placeholder="Please enter your location then press enter" ></input>
             </form>
-            <button onClick={this.handleGeocode}>Use my location</button>
+            <button onClick={this.handleGeocode}>Current Location</button>
          </div>
          <div className="sideBySide">
            <MapWrapper locations={this.props.businessList}/>
