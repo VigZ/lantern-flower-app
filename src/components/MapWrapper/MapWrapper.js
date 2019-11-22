@@ -8,8 +8,6 @@ import './MapWrapper.scss';
 import { DEFAULT_COORDS, DEFAULT_ZOOM, GOOGLE_MAP_KEY } from '../../constants'
 
 
-
-
 class MapWrapper extends Component {
 
   displayMarkers = () => {
@@ -21,7 +19,10 @@ class MapWrapper extends Component {
          lat: location.coordinates.latitude,
          lng: location.coordinates.longitude,
        }}
-      icon={{url: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" }}
+      icon={{
+        url: require("./flower-marker.png"),
+        scaledSize: new this.props.google.maps.Size(30, 30),
+        anchor: new this.props.google.maps.Point(30, 30),}}
       onClick={() => console.log("You clicked me!")} />
   })
 }
