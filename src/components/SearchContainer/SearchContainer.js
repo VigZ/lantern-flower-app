@@ -27,10 +27,16 @@ class SearchContainer extends React.Component {
     })
   }
 
+  sendPosition = (position) => {
+      this.props.fetchBusinessInfo(`${position.coords.latitude} ${position.coords.longitude}`) ;
+    }
+
   handleGeocode = (e) => {
+      if (navigator.geolocation) {
+      let coords = navigator.geolocation.getCurrentPosition(this.sendPosition);
 
-  }
-
+      }
+    }
 
   render() {
 
