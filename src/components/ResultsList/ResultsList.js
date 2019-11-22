@@ -1,6 +1,8 @@
 import React from 'react'
 import ResultCard from '../ResultCard/ResultCard.js'
 
+import './ResultsList.scss';
+
 const ResultsList = (props) => {
   const resultCards = props.resultsList.map((result)=>{
     return <ResultCard
@@ -12,10 +14,18 @@ const ResultsList = (props) => {
       price={result.price}
       location={result.location}/>
   })
-return (
-  <div className="resultsList">
-    {resultCards}
-  </div>
-)
+  if(props.resultsList.length != 0){
+    return (
+      <div className="resultsList">
+        {resultCards}
+      </div>
+    )
+  }
+  else {
+  return (
+    <div className="resultsList empty-container">
+    </div>
+    )
+  }
 }
 export default ResultsList
