@@ -45,7 +45,7 @@ class SearchContainer extends React.Component {
        <div className="searchContainer">
          <div className="searchRow">
             <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
-              <input type="text" value={this.state.searchTerm} className="search rounded" placeholder="Please enter your location" ></input>
+              <input type="text" value={this.state.searchTerm} className="search rounded" placeholder="Please enter your location then press enter" ></input>
             </form>
             <button onClick={this.handleGeocode}>Use my location</button>
          </div>

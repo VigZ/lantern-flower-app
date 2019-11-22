@@ -33,8 +33,8 @@ class MapWrapper extends Component {
           google={this.props.google}
           zoom={DEFAULT_ZOOM}
           style={{
-            maxWidth: '50%',
-            maxHeight: '50%',
+            width: '50%',
+            height: '50%',
           }}
           styles={mapStyles}
           initialCenter={{ lat: DEFAULT_COORDS.lat, lng: DEFAULT_COORDS.lng}}>

@@ -49,14 +49,18 @@
   flex-wrap: wrap;
   width: 100%;
 
-  :first-child, :nth-child(2) {
+  :first-child {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-basis: 100%;
     flex: 1;
   }
 
   .resultsList {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
     height: 378px;
     overflow-y: auto;
   }

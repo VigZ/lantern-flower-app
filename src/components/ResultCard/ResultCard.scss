@@ -1,14 +1,34 @@
 @import '../../variables.scss';
 
-.card-image {
-  height: 195px;
-  width: 198px;
+.resultCard {
+  display: inline-block;
+
+  .card-left {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+    .card-image {
+      border-radius: 5%;
+      max-width: 200px;
+    }
+
+  }
+
+  .card-body {
+    display: inline-block;
+  }
 }
+
 
 a.resultLink {
   text-decoration: none;
 }
 
-.card-name {
+.card-name, .card-text {
   color: $primaryTint;
+}
+
+.card-name {
+  display: block !important
 }

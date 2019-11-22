@@ -12,7 +12,7 @@ class Page extends Component {
     return (
       <div className="main">
         <Header bannerText="Enter a location to find florists near you."/>
-        <SearchContainer/>
+        <SearchContainer/>  
       </div>
 
     );
