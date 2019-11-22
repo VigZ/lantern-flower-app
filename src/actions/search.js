@@ -20,16 +20,3 @@ export function setResultsList(resultList){
   payload: resultList
   }
 }
-
-export function setFocus(stream){
-  return {
-  type: "ADD_FOCUSED_STREAM",
-  payload: stream
-  }
-}
-
-export function resetFocus(){
-  return{
-    type: "REMOVE_FOCUSED_STREAM"
-  }
-}

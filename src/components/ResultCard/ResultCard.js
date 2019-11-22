@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 import './ResultCard.scss';
 
@@ -18,6 +19,17 @@ return (
         </div>
     </div>
   </a>
-)
+  )
 }
+
 export default ResultCard
+
+ResultCard.propTypes = {
+  name: PropTypes.string,
+  imageUrl: PropTypes.string,
+  url: PropTypes.string,
+  phone: PropTypes.string,
+  rating: PropTypes.string,
+  price: PropTypes.string,
+  location: PropTypes.object
+}

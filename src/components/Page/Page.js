@@ -20,5 +20,5 @@ class Page extends Component {
     );
   }
 }
-const mapStateToProps = (state) => ({})
-export default connect(mapStateToProps,{})(Page);
+
+export default Page;

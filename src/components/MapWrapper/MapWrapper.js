@@ -47,7 +47,7 @@ export default GoogleApiWrapper({
 })(MapWrapper);
 
 MapWrapper.propTypes = {
-businesses: PropTypes.array
+  locations: PropTypes.array
 }
 
 MapWrapper.defaultProps = {
@@ -240,5 +240,5 @@ const mapStyles = [
            'saturation': -100
        }
    ]
-}
+ }
 ]

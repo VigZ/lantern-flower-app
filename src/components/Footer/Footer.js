@@ -19,3 +19,7 @@ export default Footer
 Footer.propTypes = {
   footerText: PropTypes.string,
 }
+
+Footer.defaultProps = {
+  footerText: ''
+}

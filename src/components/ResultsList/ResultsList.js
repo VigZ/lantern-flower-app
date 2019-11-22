@@ -1,5 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types';
+
 import ResultCard from '../ResultCard/ResultCard.js'
+
 
 import './ResultsList.scss';
 
@@ -29,3 +32,11 @@ const ResultsList = (props) => {
   }
 }
 export default ResultsList
+
+ResultsList.propTypes = {
+  resultsList: PropTypes.arrayOf(PropTypes.object),
+}
+
+ResultsList.defaultProps = {
+  resultsList: []
+}
