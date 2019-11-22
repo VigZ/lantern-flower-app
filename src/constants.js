@@ -5,7 +5,8 @@ export const API_KEY = 'NCrOnbJiUUw342FD8121BvS1MXqeKxLBExdwPyBpnoiCLVgaG5YUrq_y
 export const PROXY_URL = 'https://cors-anywhere.herokuapp.com/'
 export const GOOGLE_MAP_KEY = 'AIzaSyCtwCp-CcVquwJjT59OmertKhh7sSItEP0'
 export const MAP_URL = `https://www.google.com/maps/embed/v1/MODE?key=${GOOGLE_MAP_KEY}&parameters`
+export const DEFAULT_ZOOM = 11
 export const DEFAULT_COORDS = {
-    'lat': 40.71,
-    'lng': 74.00
+    'lat': 40.7592589,
+    'lng': -73.9245565
 }
