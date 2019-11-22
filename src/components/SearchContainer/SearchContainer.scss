@@ -44,5 +44,20 @@
 }
 
 .sideBySide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 
+  :first-child, :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .resultsList {
+    height: 378px;
+    overflow-y: auto;
+  }
 }
