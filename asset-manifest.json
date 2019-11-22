@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/lantern-flower-app/static/css/main.f151bf55.chunk.css",
+    "main.js": "/lantern-flower-app/static/js/main.6c1cc542.chunk.js",
+    "main.js.map": "/lantern-flower-app/static/js/main.6c1cc542.chunk.js.map",
+    "runtime-main.js": "/lantern-flower-app/static/js/runtime-main.ef82601f.js",
+    "runtime-main.js.map": "/lantern-flower-app/static/js/runtime-main.ef82601f.js.map",
+    "static/js/2.5e3a875a.chunk.js": "/lantern-flower-app/static/js/2.5e3a875a.chunk.js",
+    "static/js/2.5e3a875a.chunk.js.map": "/lantern-flower-app/static/js/2.5e3a875a.chunk.js.map",
+    "index.html": "/lantern-flower-app/index.html",
+    "precache-manifest.08c632ccbbb4baf43f119a9a3dcaf3ea.js": "/lantern-flower-app/precache-manifest.08c632ccbbb4baf43f119a9a3dcaf3ea.js",
+    "service-worker.js": "/lantern-flower-app/service-worker.js",
+    "static/css/main.f151bf55.chunk.css.map": "/lantern-flower-app/static/css/main.f151bf55.chunk.css.map",
+    "static/media/Montserrat-Regular.ttf": "/lantern-flower-app/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/Header.scss": "/lantern-flower-app/static/media/flower-banner.ac86e02f.png",
+    "static/media/flower-marker.png": "/lantern-flower-app/static/media/flower-marker.ff56fc2d.png",
+    "static/media/ResultsList.scss": "/lantern-flower-app/static/media/green-semi-flower.92ba56c9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef82601f.js",
+    "static/js/2.5e3a875a.chunk.js",
+    "static/css/main.f151bf55.chunk.css",
+    "static/js/main.6c1cc542.chunk.js"
+  ]
+}
