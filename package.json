@@ -2,8 +2,10 @@
   "name": "lantern-flower-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vigz.github.io/lantern-flower-app/",
   "dependencies": {
     "foundation-sites": "^6.5.3",
+    "gh-pages": "^2.1.1",
     "google-maps-react": "^2.0.2",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
@@ -16,6 +18,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
