@@ -4,15 +4,8 @@ import './Header.scss';
 
 const Header = (props) => {
 
-  let styles = {
-   height: '500px',
-   backgroundImage: `url(${props.backgroundImage})`,
-   backgroundRepeat: 'no-repeat',
-   backgroundSize: 'cover'
- };
-
   return (
-    <div className="header" style={styles}>
+    <div className="header">
     <div className="banner-text">
       <p>
         {props.bannerText}

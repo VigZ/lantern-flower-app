@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import './SearchContainer.scss';
 
 import ResultsList from '../ResultsList/ResultsList.js'
+import Map from '../Map/Map.js'
 
 import {fetchBusinessInfo} from '../../actions/search.js'
 
@@ -48,6 +49,7 @@ class SearchContainer extends React.Component {
             </form>
             <button onClick={this.handleGeocode}>Use my location</button>
          </div>
+         <Map/>
          <ResultsList resultsList={this.props.businessList}/>
        </div>
         )
