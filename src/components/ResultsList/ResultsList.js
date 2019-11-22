@@ -17,7 +17,7 @@ const ResultsList = (props) => {
       price={result.price}
       location={result.location}/>
   })
-  if(props.resultsList.length != 0){
+  if(props.resultsList.length !== 0){
     return (
       <div className="resultsList">
         {resultCards}

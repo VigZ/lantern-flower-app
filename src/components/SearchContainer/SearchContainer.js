@@ -55,6 +55,9 @@ class SearchContainer extends React.Component {
         case error.UNKNOWN_ERROR:
           window.alert("An unknown error occurred.")
           break;
+        default:
+          window.alert("An error occurred. Please try again.")
+          break;
       }
     }
 

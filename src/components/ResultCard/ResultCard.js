@@ -5,7 +5,7 @@ import './ResultCard.scss';
 
 const ResultCard = (props) => {
 return (
-  <a href={props.url} className="resultLink" target="_blank">
+  <a href={props.url} className="resultLink" target="_blank" rel="noopener noreferrer">
     <div className="card resultCard">
       <div className="card-left">
         <img src={props.imageUrl} className="card-image" alt="card_image" height='200px' width='200px'/>

@@ -4,8 +4,9 @@ export default function searchReducer(state = { businessList: [] }, action) {
     if(action.payload && action.payload.businesses){
       return {...state, businessList: [...action.payload.businesses]}
     }
+    break
     case "LIST_RESULTS":
-    return {...state}
+      return {...state}
     default:
       return state
   }
