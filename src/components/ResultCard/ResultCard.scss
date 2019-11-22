@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+.card-image {
+  height: 195px;
+  width: 198px;
+}
+
+a.resultLink {
+  text-decoration: none;
+}
+
+.card-name {
+  color: $primaryTint;
+}
