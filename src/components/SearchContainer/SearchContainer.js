@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 
 import './SearchContainer.scss';
 
+import ResultsList from '../ResultsList/ResultsList.js'
+
 import {fetchBusinessInfo} from '../../actions/search.js'
 
 
@@ -34,10 +36,13 @@ class SearchContainer extends React.Component {
 
      return(
        <div className="searchContainer">
-          <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
-            <input type="text" value={this.state.searchTerm} className="search rounded" placeholder="Please enter your location" ></input>
-          </form>
-          <button onClick={this.handleGeocode}>Use my location</button>
+         <div className="searchRow">
+            <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
+              <input type="text" value={this.state.searchTerm} className="search rounded" placeholder="Please enter your location" ></input>
+            </form>
+            <button onClick={this.handleGeocode}>Use my location</button>
+         </div>
+         <ResultsList resultsList={this.props.businessList}/>
        </div>
         )
       }
