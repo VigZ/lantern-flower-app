@@ -11,7 +11,7 @@ class Page extends Component {
   render() {
     return (
       <div className="main">
-        <Header bannerText="Search for flowers near you."/>
+        <Header bannerText="Enter a location to find florists near you."/>
         <SearchContainer/>
       </div>
 

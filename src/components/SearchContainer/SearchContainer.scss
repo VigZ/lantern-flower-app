@@ -3,18 +3,39 @@
 .searchRow {
   display: flex;
   justify-content: center;
+  padding: 103px 0 103px 0;
+  background-color: $grey;
 
   form {
     height: 50px;
     input {
       height: 100%;
-      max-width: 750px;
-      width: 50%;
+      width: 665px;
+      color: $primaryTint;
+      padding-left: 20px;
       outline:none;
+      -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     }
-    button {
-      width: 50%;
+
+    input::placeholder {
+      color: $primaryTint;
     }
+  }
+
+  button {
+    width: 158px;
+    margin-left: 5px;
+    color: $grey;
+    background-color: $primaryTint;
+    border-color: $primaryTint;
+    border-radius: 9999px;
+    font-weight: 700;
+    outline:none;
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
 
