@@ -17,6 +17,20 @@ yarn if you prefer to install the dependencies.
   When the api data is populated, the result items will appear on the right, while a map
   with custom flower pins will appear on the left. Clicking either the item, or the corresponding pin will open a new tab in your browser to the Yelp.com detail page for that resource.
 
+## Tech Choices
+  The relatively small scope of this exercise, lack of a need to persist data to a database or store, and lack of complex transformations on data, led me to use React.js and create a simple SPA.
+
+  I chose not to use a routing solution (ReactRouter) for this project as it would add unneeded complexity and some pitfalls when deploying to Github.pages. However, I did try to construct the App tree with router in mind, in case anyone or myself wanted to expand the application.
+
+  I did, however, choose to use Redux. (A little hypocritical of my last point, I know!).
+  This project absolutely didn't need Redux for state management, but I wanted to allow for future additions by implementing the groundwork early on as adding more reducers and action creators is relatively easy to do.
+
+  I thought it would be interesting to see a map of the different shops in your area, so I added that too!
+
+  There are some custom art assets thrown in the project as well.
+
+  I'm all for talking more about my choices, the good and the silly!
+   
 ## Known Bugs
 I did notice a small graphical bug on one of the buttons that overlay the map component.
 It was a great struggle styling and getting the component library to play nice with the rest of the page.
