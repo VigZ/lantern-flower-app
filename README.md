@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Flowers Near You
 
-## Available Scripts
+This a simple application built with React.js, that allows a user to enter their location via a search bar (Or use their current location via a button click), then display info cards for the top 20 closest results. There is also a map with custom pins for these locations.
 
-In the project directory, you can run:
+## Getting Started
 
-### `yarn start`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. First, you will want to clone this repo to your machine with a ```git clone```.
+2. Next, ```cd``` into the root directory of this project and run ```npm install``` or
+yarn if you prefer to install the dependencies.
+3. You can boot up the application with ```npm run start``` to run the start script and start listening on an open port. (Default is 3000)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Usage
+  On the application page, simply enter in your location to the search bar, then press enter to submit your search. You also have the choice to use your browser's geolocate to via the button to the right of the search bar.
 
-### `yarn test`
+  When the api data is populated, the result items will appear on the right, while a map
+  with custom flower pins will appear on the left. Clicking either the item, or the corresponding pin will open a new tab in your browser to the Yelp.com detail page for that resource.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Known Bugs
+I did notice a small graphical bug on one of the buttons that overlay the map component.
+It was a great struggle styling and getting the component library to play nice with the rest of the page.
 
-### `yarn build`
+## Testing
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Testing is performed with help from the Jest and react-test-renderer libraries.
+Simply run the ```npm run test``` command to run the test suites.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Feedback
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I would greatly appreciate any and all feedback you may have. I have my own criticisms of the project, what I would do differently next time, libraries I'd like to try, etc. I'd also love to chat about this project. Thanks!
 
-### `yarn eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Acknowledgments
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Thanks to all the forum posts that helped me navigate through arcane errors and
+  overflowing divs.
